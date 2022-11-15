@@ -20,7 +20,7 @@
     "lint:stylelint": "stylelint --ignore-path .gitignore './**/*.css' './**/*.jsx'",
     "lint:stylelint:fix": "stylelint --ignore-path .gitignore --fix './**/*.css' './**/*.jsx'",
     "init:seeds": "ts-node-transpile-only scripts/init.js",
-    "lighthouse": "lighthouse --output-path=./lighthouse"
+    "lighthouse": "lighthouse --output-path=./lighthouse/result.html"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
