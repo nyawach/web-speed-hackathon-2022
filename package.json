@@ -20,7 +20,8 @@
     "lint:stylelint": "stylelint --ignore-path .gitignore './**/*.css' './**/*.jsx'",
     "lint:stylelint:fix": "stylelint --ignore-path .gitignore --fix './**/*.css' './**/*.jsx'",
     "init:seeds": "ts-node-transpile-only scripts/init.js",
-    "lighthouse": "lighthouse --output-path=./lighthouse/$(date '+%m-%d-%h%M').html"
+    "lighthouse": "lighthouse --output-path=./lighthouse/$(date '+%m-%d-%h%M').html",
+    "imagemin": "find ./public/assets/images -type f -iname '*.jpg' -print | xargs jpegoptim --max=80 --strip-all"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
